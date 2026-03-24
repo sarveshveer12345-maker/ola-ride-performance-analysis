@@ -351,6 +351,27 @@ Promote digital payment options further and provide incentives to diversify paym
 
 ---
 
+## Project Structure
+
+ola-ride-performance-analysis/
+
+├── data/
+│   └── ola_ride_operations_dataset.xlsx        # Raw dataset used for analysis
+
+├── sql/
+│   └── business_analysis.sql                   # SQL queries for business insights
+
+├── powerbi/
+│   └── ola_ride_performance_dashboard.pbix     # Power BI dashboard file
+
+├── dashboard_images/
+│   ├── ola_dashboard_overview.png              # Dashboard preview image
+│   └── ola_dataset_preview.png                 # Dataset preview image
+
+└── README.md                                   # Project documentation
+
+---
+
 ## Repository Structure
 
 - **data/** - ola_ride_operations_dataset.xlsx
