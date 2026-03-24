@@ -313,7 +313,7 @@ The insights derived from SQL analysis were used to design key metrics and visua
 
 - The ride success rate is **~62%**, meaning nearly **38% of bookings do not convert into completed rides**, indicating a significant gap in operational efficiency.
 
-- Total revenue stands at **~39M**, but this reflects only completed rides, suggesting that a substantial portion of potential revenue is lost due to unsuccessful bookings.
+- Total revenue stands at **~39.03M**, but this reflects only completed rides, suggesting that a substantial portion of potential revenue is lost due to unsuccessful bookings.
 
 - Revenue is heavily concentrated in **Cash and UPI payments**, indicating a strong dependency on these methods and low diversification in payment channels.
 
@@ -321,7 +321,7 @@ The insights derived from SQL analysis were used to design key metrics and visua
 
 - A small group of customers appears repeatedly in the top bookings, suggesting **customer concentration**, where a limited segment drives a significant share of demand.
 
-- The average ride distance of **~14 km** indicates a balanced mix of short and medium-distance trips, reflecting typical urban mobility patterns.
+- The average ride distance of **~14.21 km** indicates a balanced mix of short and medium-distance trips, reflecting typical urban mobility patterns.
 
 - Customer ratings average around **4.0**, indicating stable but not exceptional service quality, leaving room for improvement in customer experience.
 
