@@ -6,6 +6,7 @@ This project analyzes ride-hailing data to evaluate booking performance, revenue
 
 Using SQL, key business queries were performed to extract insights such as successful bookings, ride distance trends, cancellation counts, and top customers. These insights were then visualized in Power BI through an interactive dashboard to monitor ride efficiency, revenue distribution, and operational performance.
 
+This project focuses on SQL-driven data analysis combined with Power BI visualization to evaluate ride performance, revenue trends, customer behavior, and operational efficiency.
 ---
 
 ## Business Context
@@ -368,8 +369,6 @@ The insights derived from SQL analysis were used to design key metrics and visua
 
 - Data Cleaning and Preparation
 
-- SQL Query Writing and Analysis
-
 - KPI Development
 
 - DAX Calculations
@@ -379,6 +378,15 @@ The insights derived from SQL analysis were used to design key metrics and visua
 - Business Insight Generation
 
 - Analytical Thinking and Problem Solving
+
+---
+
+## SQL Skills Demonstrated
+
+- Data filtering and aggregation
+- Group By and sorting techniques
+- Business query writing
+- Analytical thinking using SQL
 
 ---
 
