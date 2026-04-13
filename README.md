@@ -141,133 +141,233 @@ SQL was used to perform detailed data analysis and answer specific business ques
 The SQL analysis forms the foundation for insights visualized in the Power BI dashboard.
 
 
-## 1. Ride Success Analysis
+## 1. Ride Completion & Revenue Dependency
 
-Business Question:
+**Business Question:**
 How many rides are successfully completed?
 
-Key Insight:
-A significant portion of rides are successfully completed, forming the base for revenue generation.
+**Key Insight:**
+- Only 62.1% of total bookings are successfully completed, meaning a significant portion of demand fails to convert into revenue.
 
-Business Recommendation:
-Focus on improving the success rate further to maximize revenue and operational efficiency.
+**Business Impact:**
+- Revenue generation is highly dependent on ride completion, and low conversion directly leads to revenue leakage.
+
+**Recommendation:**
+- Improving ride completion rate should be the top operational priority, as it directly impacts revenue without requiring additional demand.
 
 --- 
 
-## 2. Ride Distance by Vehicle Type
+## 2. Ride Distance Patterns by Vehicle Type
 
-Business Question:
+**Business Question:**
 What is the average ride distance for each vehicle type?
 
-Key Insight:
-Different vehicle types serve different distance ranges, indicating varied customer usage patterns.
+**Key Insight:**
+- Most vehicle categories (Prime Sedan, Bike, SUV, Mini, etc.) have a similar average ride distance (15–16 km), while Auto stands out at 6.21 km, serving significantly shorter trips.
 
-Business Recommendation:
-Align vehicle allocation and pricing strategies based on trip distance patterns.
+**Business Impact:**
+This indicates clear segmentation in customer usage:
+
+- Autos → short-distance, high-frequency rides
+- Other vehicles → medium-distance, higher-value rides
+
+**Recommendation:**
+
+Optimize pricing and availability:
+
+- Autos for short urban trips
+- Premium vehicles for longer, higher-value rides
+  
+Ensure better supply of Autos in high-density areas
 
 ---
 
-## 3. Customer Cancellation Analysis
+## 3. Customer Cancellation Impact
 
-Business Question:
+**Business Question:**
 How many rides are cancelled by customers?
 
-Key Insight:
-Customer cancellations contribute to ride inefficiency and lost revenue opportunities.
+**Key Insight:**
+- A total of 7,214 rides are cancelled by customers, representing a significant portion of failed bookings.
 
-Business Recommendation:
-Improve booking experience and reduce wait times to minimize customer-side cancellations.
+**Business Impact:**
+Customer cancellations directly lead to:
 
----
+- Lost revenue
+- Reduced operational efficiency
+- Lower driver utilization
 
-## 4. High-Value Customer Identification
+**Recommendation:**
+Focus on reducing customer cancellations by improving:
 
-Business Question:
-Who are the top 5 customers based on ride frequency?
-
-Key Insight:
-A small segment of customers contributes significantly to total bookings.
-
-Business Recommendation:
-Introduce loyalty programs to retain and reward high-frequency users.
+- Wait times (C_TAT)
+- Booking reliability
+- Transparency in ride allocation
 
 ---
 
-## 5. Driver Cancellation Behavior
+## 4. High-Value Customer Contribution
 
-Business Question:
-How many rides are cancelled by drivers due to personal or vehicle issues?
+**Business Question:**
+Who are the top customers based on ride frequency?
 
-Key Insight:
-Driver-side cancellations highlight operational and availability challenges.
+**Key Insight:**
+- The top customers have completed only 3–4 rides each, indicating that no single customer contributes a disproportionately high number of bookings.
 
-Business Recommendation:
-Implement driver incentives and accountability systems to reduce cancellations.
+- This suggests that ride demand is distributed across a broad customer base rather than concentrated among a few high-frequency users.
 
----
+**Business Impact:**
 
-## 6. Driver Performance (Ratings)
+- Lower dependency on individual customers reduces revenue concentration risk
+- However, it also indicates limited customer loyalty and low repeat usage frequency
 
-Business Question:
-What are the maximum and minimum driver ratings for Prime Sedan rides?
+**Recommendation:**
 
-Key Insight:
-Driver performance varies significantly, indicating inconsistency in service quality.
-
-Business Recommendation:
-Monitor low-performing drivers and improve service standards through training.
+- Introduce retention and engagement strategies to increase repeat bookings
+- Develop loyalty programs or incentives to convert occasional users into high-frequency customers
+- Focus on improving ride experience to drive customer stickiness
 
 ---
 
-## 7. Payment Method Usage (UPI)
+## 5. Driver-Side Cancellation Behavior
 
-Business Question:
-How many rides are completed using UPI payments?
+**Business Question:**
+How many rides are cancelled by drivers due to personal and car-related issues?
 
-Key Insight:
-UPI is a frequently used payment method, reflecting customer preference for digital payments.
+**Key Insight:**
+- A total of 4,449 rides are cancelled by drivers, indicating significant inefficiencies on the supply side.
 
-Business Recommendation:
-Promote digital payments further with incentives and seamless experience.
+Driver cancellations arise due to multiple reasons (including personal, vehicle-related, and other operational issues), highlighting inconsistency in driver availability and reliability.
+
+**Business Impact:**
+Driver-side cancellations:
+
+- Reduce ride completion rate
+- Increase customer wait time
+- Negatively impact customer experience and trust
+
+**Recommendation:**
+
+- Introduce incentives for ride acceptance and completion
+- Monitor and penalize frequent driver cancellations
+- Improve driver allocation and availability during peak demand
+  
+---
+
+## 6. Driver Performance Consistency (Prime Sedan)
+
+**Business Question:**
+What is the maximum and minimum driver rating for Prime Sedan bookings?
+
+**Key Insight:**
+- For Prime Sedan rides, driver ratings range from 3 to 5, indicating a significant variation in service quality within the same vehicle category.
+
+**Business Impact:**
+This level of variation suggests that customers booking the same vehicle type may experience inconsistent service quality, which can:
+
+- Reduce customer satisfaction
+- Increase the likelihood of cancellations
+- Impact repeat usage
+
+**Recommendation:**
+
+- Identify and monitor low-rated drivers (rating ≤ 3)
+- Implement performance improvement programs or training
+- Standardize service quality within premium categories like Prime Sedan to ensure a consistent customer experience
+
+---
+
+## 7. Payment Behavior (UPI Usage)
+
+**Business Question:**
+How many rides are completed using UPI payment?
+
+**Key Insight:**
+- UPI is a widely used payment method (based on dataset trend), indicating strong adoption of digital payments.
+
+**Business Impact:**
+- Heavy reliance on limited payment modes may reduce flexibility and control over transactions.
+
+**Recommendation:**
+Promote diversified payment options such as:
+
+- Cards
+- Wallets
+- Subscription-based payments
 
 ---
 
 ## 8. Customer Satisfaction by Vehicle Type
 
-Business Question:
-What is the average customer rating across vehicle types?
+**Business Question:**
+What is the average customer rating per vehicle type?
 
-Key Insight:
-Customer satisfaction varies across vehicle categories.
+**Key Insight:**
+Customer ratings are consistently around 4.0 across all vehicle types, with:
 
-Business Recommendation:
-Focus on improving service quality in lower-rated vehicle segments.
+- Slightly higher ratings for Prime Plus (4.01)
+- Slightly lower ratings for eBike (3.98)
 
----
+**Business Impact:**
+Service quality is stable but not exceptional, indicating limited differentiation.
 
-## 9. Revenue from Successful Rides
+**Recommendation:**
 
-Business Question:
-What is the total booking value from successful rides?
-
-Key Insight:
-Revenue is directly tied to successful ride completion.
-
-Business Recommendation:
-Increase ride success rate to maximize revenue generation.
+- Improve service quality to push ratings above 4.2
+- Focus on underperforming segments like eBike
 
 ---
 
-## 10. Incomplete Ride Analysis
+9. Revenue from Successful Rides
 
-Business Question:
-What are the reasons for incomplete rides?
+**Business Question:**
+What is the total booking value from completed rides?
 
-Key Insight:
-Incomplete rides indicate operational failures and service disruptions.
+**Key Insight:**
+- Total revenue from successful rides is 24.22M, indicating strong revenue generation but only from completed bookings.
 
-Business Recommendation:
-Identify and fix recurring issues causing incomplete rides.
+**Business Impact:**
+- Revenue is constrained by ride failures rather than demand, highlighting inefficiency in conversion.
+
+**Recommendation:**
+- Improve ride success rate to unlock additional revenue without scaling demand.
+
+---
+
+## 10. Incomplete Ride Failure Analysis 
+
+**Business Question:**
+What are the key reasons for incomplete rides?
+
+**Key Insight:**
+
+Incomplete rides are primarily driven by three recurring factors:
+
+- Customer Demand (most frequent)
+- Vehicle Breakdown (significant share)
+- Other Issues (secondary contributor)
+
+The dominance of “Customer Demand” as a failure reason suggests a mismatch between demand and supply, where rides are not being fulfilled despite customer intent.
+
+Additionally, a notable number of failures due to vehicle breakdowns indicates reliability issues on the driver side, impacting ride completion.
+
+**Business Impact:**
+- Demand-supply mismatch leads to lost revenue despite active demand
+- Vehicle-related failures reduce platform reliability and customer trust
+- Repeated incomplete rides can increase customer churn and dissatisfaction
+
+**Recommendation:**
+1. Fix Demand-Supply Imbalance (HIGH PRIORITY)
+- Increase driver availability in high-demand areas
+- Improve real-time demand forecasting
+  
+2. Improve Vehicle Reliability
+- Monitor drivers with frequent breakdown issues
+- Introduce vehicle quality checks and maintenance incentives
+
+3. Reduce Operational Uncertainty
+- Investigate “Other Issue” category for hidden patterns
+- Improve system-level reliability and ride execution
 
 ---
 
@@ -384,33 +484,77 @@ If not addressed, these issues can lead to:
 
 ## Business Recommendations
 
-- Prioritize Reducing Ride Failures (Highest Impact)
+### Prioritize Reducing Ride Failures (Highest Impact)
 
-Focus on improving the 62% success rate, as even a 5–10% increase can significantly boost revenue without additional customer acquisition costs.
+Focus on improving the 62.1% success rate, as even a 5–10% increase can significantly boost revenue without additional customer acquisition costs.
 
 Action:
 
 - Monitor and reduce high-cancellation segments
 - Improve ride confirmation speed
 
-- **Reduce revenue leakage:**  
-  Convert more bookings into successful rides by addressing cancellation causes identified in SQL analysis.
 
-- **Diversify payment methods:**  
-  Promote card and wallet usage through targeted incentives to reduce over-dependence on cash and UPI.
+### Reduce Revenue Leakage Instead of Chasing Growth
 
-- **Optimize vehicle supply strategy:**  
-  Increase availability of high-performing vehicle types that generate higher revenue to maximize earnings.
+The current system loses revenue from existing demand — fixing this is more efficient than acquiring new users.
 
-- **Strengthen customer retention:**  
-  Introduce loyalty programs for high-frequency users who contribute significantly to booking volume.
+Action:
 
-- **Enhance long-distance ride incentives:**  
-  Provide driver incentives for longer trips to ensure availability and reduce cancellation probability for high-value rides.
+- Identify high-failure booking segments (vehicle type, time, location)
+- Target operational fixes in those segments
 
-- **Enhance customer experience:**  
-  Improve service quality to push ratings beyond 4.0 by reducing wait times and ensuring ride reliability.
 
+### Promote Digital Payment Adoption
+
+Heavy reliance on Cash and UPI limits payment diversification.
+
+Action:
+
+- Incentivize card and wallet usage
+- Improve digital payment experience
+  
+
+### Optimize Vehicle Supply Strategy
+
+Different vehicle types show varying performance in revenue and usage.
+
+Action:
+
+- Increase availability of high-performing vehicle categories
+- Rebalance supply in underperforming segments
+
+
+### Strengthen High-Value Customer Retention
+
+A small group of customers drives a large share of bookings, making them critical to revenue stability.
+
+Action:
+
+- Introduce loyalty programs and targeted incentives
+- Provide priority matching or reduced wait times for frequent users
+
+
+### Optimize Driver Allocation & Reduce Wait Time
+
+Since C_TAT and V_TAT are key drivers of cancellations, improving allocation efficiency is critical.
+
+Action:
+
+- Improve driver dispatch logic in high-demand areas
+- Increase driver availability during peak hours
+- Introduce incentives for faster ride acceptance
+
+  
+### Improve Service Quality to Increase Conversion
+
+With ratings at 4.0, service is acceptable but not strong enough to reduce cancellations.
+
+Action:
+
+- Monitor low-rated drivers
+- Standardize service quality across vehicle types
+- Reduce variability in ride experience
+  
 ---
 
 ## Conclusion 
