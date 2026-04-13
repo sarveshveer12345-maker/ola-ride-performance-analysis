@@ -122,7 +122,7 @@ How much potential revenue is lost due to unsuccessful bookings?
 Key Insight:
 Out of 71.2K total bookings, only 62.1% are successfully completed, meaning nearly 38% of demand fails to convert into revenue.
 
-With total revenue at 24.22M, this indicates a significant portion of potential revenue is lost due to cancellations and incomplete rides.
+With total revenue at 24.22M, This indicates that a substantial portion of potential revenue remains unrealized due to failed ride conversions, highlighting inefficiency in monetizing existing demand.
 
 Business Impact:
 This is not just an operational inefficiency — it represents a direct revenue leakage problem, where existing demand is not being fully monetized.
@@ -318,7 +318,7 @@ Service quality is stable but not exceptional, indicating limited differentiatio
 
 ---
 
-9. Revenue from Successful Rides
+## 9. Revenue from Successful Rides
 
 **Business Question:**
 What is the total booking value from completed rides?
@@ -572,6 +572,8 @@ The study demonstrates that:
 - Revenue growth can be achieved by fixing internal inefficiencies rather than external expansion
 
 Addressing these gaps can significantly improve both profitability and customer satisfaction.
+
+This analysis demonstrates how operational inefficiencies, rather than lack of demand, can be the primary constraint on revenue growth in platform-based business models.
 
 ---  
 
