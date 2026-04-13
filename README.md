@@ -1,4 +1,4 @@
-# Reducing Revenue Leakage in Ride-Hailing Operations: A Data Analysis of Cancellations, Demand, and Efficiency.
+# Revenue Leakage Analysis in Ride-Hailing: Cancellations, Demand & Operational Efficiency.
 
 ## Project Overview
 
@@ -122,15 +122,14 @@ How much potential revenue is lost due to unsuccessful bookings?
 Key Insight:
 Out of 71.2K total bookings, only 62.1% are successfully completed, meaning nearly 38% of demand fails to convert into revenue.
 
-With total revenue at 24.22M, This indicates that a substantial portion of potential revenue remains unrealized due to failed ride conversions, highlighting inefficiency in monetizing existing demand.
+With total revenue at 24.22M, this indicates that a substantial portion of potential revenue remains unrealized due to failed ride conversions, highlighting inefficiency in monetizing existing demand.
 
 Business Impact:
 This is not just an operational inefficiency — it represents a direct revenue leakage problem, where existing demand is not being fully monetized.
 
 Recommendation:
 
-Prioritize reducing cancellations over acquiring new users
-Even a 5–10% improvement in ride success rate could significantly increase revenue without additional customer acquisition cost
+Prioritize reducing cancellations over acquiring new users. Even a 5–10% improvement in ride success rate could significantly increase revenue without additional customer acquisition cost
 
 ---
 
@@ -447,7 +446,7 @@ The dashboard enables operations teams to identify high-failure segments, monito
 
 - The ride success rate stands at 62.1%, meaning nearly 38% of total bookings fail to convert into completed rides, indicating a significant gap between demand and revenue realization. This highlights that the primary issue is not demand generation, but inefficient conversion of bookings into revenue.
 
-- Despite generating 24.22M in revenue, the platform is losing a substantial portion of potential earnings due to unsuccessful bookings, making revenue leakage a critical business concern rather than just an operational issue.
+- Despite generating 24.22M in revenue, This indicates that improving ride conversion efficiency is the most immediate lever for revenue growth.
 
 - Revenue contribution is heavily concentrated in Cash and UPI payments, indicating low diversification in payment behavior, which may limit scalability and reduce control over transaction efficiency.
 
