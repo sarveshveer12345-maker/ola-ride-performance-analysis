@@ -445,16 +445,16 @@ To further enhance decision-making and operational performance, the following an
 
 5. Pricing & Incentive Optimization
    
-   Analyze whether:
+- Analyze whether:
    
-   -Longer rides face higher cancellations
-   -Certain vehicle types underperform due to pricing mismatch
+   - Longer rides face higher cancellations
+   - Certain vehicle types underperform due to pricing mismatch
   
 - Recommend dynamic pricing or driver incentives
   
 6. Driver Performance & Reliability Analysis
    
-   Track driver-level metrics:
+- Track driver-level metrics:
    
    - Cancellation frequency
    - Ratings
