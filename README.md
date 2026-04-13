@@ -14,7 +14,7 @@ This project focuses on SQL-driven data analysis combined with Power BI visualiz
 
 This analysis evaluates ride-hailing operations with a focus on revenue generation, ride completion efficiency, and cancellation behavior.
 
-Out of 71.2K total bookings, only 62.1% were successfully completed, resulting in 39.03M in realized revenue. However, a significant portion of demand fails to convert into completed rides, highlighting a critical gap between customer demand and revenue realization.
+Out of 71.2K total bookings, only 62.1% were successfully completed, resulting in 24.22M in realized revenue. However, a significant portion of demand fails to convert into completed rides, highlighting a critical gap between customer demand and revenue realization.
 
 The analysis identifies cancellations, operational delays (C_TAT & V_TAT), and inconsistent service quality as key drivers of inefficiency. Additionally, revenue is concentrated across a limited set of payment methods and customer segments.
 
@@ -33,7 +33,7 @@ This analysis focuses on:
 
 - Analyzing revenue contribution across vehicle types and payment methods
 
-- Evaluating customer behavior and ride frequencye
+- Evaluating customer behavior and ride frequency
 
 ---
 
@@ -122,7 +122,7 @@ How much potential revenue is lost due to unsuccessful bookings?
 Key Insight:
 Out of 71.2K total bookings, only 62.1% are successfully completed, meaning nearly 38% of demand fails to convert into revenue.
 
-With total revenue at 39.03M, this indicates a significant portion of potential revenue is lost due to cancellations and incomplete rides.
+With total revenue at 24.22M, this indicates a significant portion of potential revenue is lost due to cancellations and incomplete rides.
 
 Business Impact:
 This is not just an operational inefficiency — it represents a direct revenue leakage problem, where existing demand is not being fully monetized.
@@ -389,7 +389,7 @@ The insights derived from SQL analysis were used to design key metrics and visua
 
 ## Key Performance Indicators
 
-- Total Revenue: 39.03M
+- Total Revenue: 24.22M
 
 - Total Bookings: 71.20K
 
@@ -419,6 +419,8 @@ The insights derived from SQL analysis were used to design key metrics and visua
 
 - Interactive filters for dynamic analysis
 
+The dashboard enables operations teams to identify high-failure segments, monitor ride conversion rates, and take real-time actions to reduce cancellations.
+
 ---
 
 ## Business Questions
@@ -445,13 +447,13 @@ The insights derived from SQL analysis were used to design key metrics and visua
 
 - The ride success rate stands at 62.1%, meaning nearly 38% of total bookings fail to convert into completed rides, indicating a significant gap between demand and revenue realization. This highlights that the primary issue is not demand generation, but inefficient conversion of bookings into revenue.
 
-- Despite generating 39.03M in revenue, the platform is losing a substantial portion of potential earnings due to unsuccessful bookings, making revenue leakage a critical business concern rather than just an operational issue.
+- Despite generating 24.22M in revenue, the platform is losing a substantial portion of potential earnings due to unsuccessful bookings, making revenue leakage a critical business concern rather than just an operational issue.
 
 - Revenue contribution is heavily concentrated in Cash and UPI payments, indicating low diversification in payment behavior, which may limit scalability and reduce control over transaction efficiency.
 
 - Certain vehicle types generate higher revenue with comparable ride volumes, highlighting differences in pricing and customer preference across categories.
 
-- A small group of customers appears repeatedly in the top bookings, suggesting **customer concentration**, where a limited segment drives a significant share of demand.
+- Customer demand is widely distributed with low repeat frequency, indicating limited customer loyalty and an opportunity to improve retention.
 
 - The average ride distance of 14.21 km reflects a mix of short- and mid-distance trips, but longer trips likely contribute more to revenue while also being more sensitive to cancellations, indicating a potential mismatch between trip value and service reliability.
 
@@ -561,7 +563,7 @@ Action:
 
 This analysis highlights that the primary challenge in ride-hailing operations is not demand generation, but inefficient conversion of bookings into successful rides.
 
-While the platform generates 39.03M in revenue, a significant portion of potential earnings is lost due to cancellations and incomplete rides.
+While the platform generates 24.22M in revenue, a significant portion of potential earnings is lost due to cancellations and incomplete rides.
 
 The study demonstrates that:
 
