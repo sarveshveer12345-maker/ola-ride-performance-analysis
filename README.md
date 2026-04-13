@@ -343,20 +343,20 @@ The insights derived from SQL analysis were used to design key metrics and visua
 ## Key Insights
 
 
-- The ride success rate is **~62%**, meaning nearly **38% of bookings do not convert into completed rides**, indicating a significant gap in operational efficiency.
+- The ride success rate stands at 62.1%, meaning nearly 38% of total bookings fail to convert into completed rides, indicating a significant gap between demand and revenue realization. This highlights that the primary issue is not demand generation, but inefficient conversion of bookings into revenue.
 
-- Total revenue stands at **~39.03M**, but this reflects only completed rides, suggesting that a substantial portion of potential revenue is lost due to unsuccessful bookings.
+- Despite generating 39.03M in revenue, the platform is losing a substantial portion of potential earnings due to unsuccessful bookings, making revenue leakage a critical business concern rather than just an operational issue.
 
-- Revenue is heavily concentrated in **Cash and UPI payments**, indicating a strong dependency on these methods and low diversification in payment channels.
+- Revenue contribution is heavily concentrated in Cash and UPI payments, indicating low diversification in payment behavior, which may limit scalability and reduce control over transaction efficiency.
 
-- Certain vehicle types generate **higher revenue with comparable ride volumes**, highlighting differences in pricing and customer preference across categories.
+- Certain vehicle types generate higher revenue with comparable ride volumes, highlighting differences in pricing and customer preference across categories.
 
 - A small group of customers appears repeatedly in the top bookings, suggesting **customer concentration**, where a limited segment drives a significant share of demand.
 
-- The average ride distance of **~14.21 km** indicates a balanced mix of short and medium-distance trips, reflecting typical urban mobility patterns.
+- The average ride distance of 14.21 km reflects a mix of short- and mid-distance trips, but longer trips likely contribute more to revenue while also being more sensitive to cancellations, indicating a potential mismatch between trip value and service reliability.
 
-- Customer ratings average around **4.0**, indicating stable but not exceptional service quality, leaving room for improvement in customer experience.
-
+- Customer ratings average around 4.0, suggesting stable but not exceptional service quality. This indicates that while the platform is functional, there is a clear opportunity to improve customer experience and differentiate on service reliability.
+  
 ---
 
 ## Business Impact
@@ -384,8 +384,14 @@ If not addressed, these issues can lead to:
 
 ## Business Recommendations
 
-- **Improve ride completion rate:**  
-  Focus on reducing the ~38% failure rate by optimizing driver allocation and minimizing delays in ride acceptance.
+- Prioritize Reducing Ride Failures (Highest Impact)
+
+Focus on improving the 62% success rate, as even a 5–10% increase can significantly boost revenue without additional customer acquisition costs.
+
+Action:
+
+- Monitor and reduce high-cancellation segments
+- Improve ride confirmation speed
 
 - **Reduce revenue leakage:**  
   Convert more bookings into successful rides by addressing cancellation causes identified in SQL analysis.
