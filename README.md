@@ -444,6 +444,7 @@ To further enhance decision-making and operational performance, the following an
 - Evaluate how cancellations impact repeat usage
 
 5. Pricing & Incentive Optimization
+   
    Analyze whether:
    
    -Longer rides face higher cancellations
@@ -452,6 +453,7 @@ To further enhance decision-making and operational performance, the following an
 - Recommend dynamic pricing or driver incentives
   
 6. Driver Performance & Reliability Analysis
+   
    Track driver-level metrics:
    
    - Cancellation frequency
