@@ -1,4 +1,4 @@
-# OLA Ride Performance Analysis | SQL + Power BI
+# Reducing Revenue Leakage in Ride-Hailing Operations: A Data Analysis of Cancellations, Demand, and Efficiency.
 
 ## Project Overview
 
@@ -10,6 +10,17 @@ This project focuses on SQL-driven data analysis combined with Power BI visualiz
 
 ---
 
+## Executive Summary
+
+This analysis evaluates ride-hailing operations with a focus on revenue generation, ride completion efficiency, and cancellation behavior.
+
+Out of 71.2K total bookings, only 62.1% were successfully completed, resulting in 39.03M in realized revenue. However, a significant portion of demand fails to convert into completed rides, highlighting a critical gap between customer demand and revenue realization.
+
+The analysis identifies cancellations, operational delays (C_TAT & V_TAT), and inconsistent service quality as key drivers of inefficiency. Additionally, revenue is concentrated across a limited set of payment methods and customer segments.
+
+Overall, the findings indicate that improving ride completion rates and operational efficiency presents a larger revenue opportunity than increasing customer acquisition.
+
+---
 ## Business Context
 
 Ride-hailing operations depend heavily on ride completion rates, cancellation behavior, and customer demand patterns, all of which directly impact revenue and service efficiency.
@@ -101,6 +112,25 @@ CALCULATE(
     ride_data[Booking_Status] = "Success"
 )
 
+---
+
+## Revenue Leakage Analysis
+
+Business Question:
+How much potential revenue is lost due to unsuccessful bookings?
+
+Key Insight:
+Out of 71.2K total bookings, only 62.1% are successfully completed, meaning nearly 38% of demand fails to convert into revenue.
+
+With total revenue at 39.03M, this indicates a significant portion of potential revenue is lost due to cancellations and incomplete rides.
+
+Business Impact:
+This is not just an operational inefficiency — it represents a direct revenue leakage problem, where existing demand is not being fully monetized.
+
+Recommendation:
+
+Prioritize reducing cancellations over acquiring new users
+Even a 5–10% improvement in ride success rate could significantly increase revenue without additional customer acquisition cost
 
 ---
 
@@ -327,6 +357,28 @@ The insights derived from SQL analysis were used to design key metrics and visua
 
 - Customer ratings average around **4.0**, indicating stable but not exceptional service quality, leaving room for improvement in customer experience.
 
+---
+
+## Business Impact
+
+The low ride success rate (62.1%) results in substantial revenue leakage, where a large share of potential bookings does not translate into actual revenue.
+
+Operational inefficiencies such as high cancellation rates and longer wait times directly affect:
+
+- Revenue growth
+- Customer satisfaction
+- Platform reliability
+
+Additionally:
+
+- Heavy reliance on Cash and UPI indicates limited payment diversification
+- A small group of customers contributes disproportionately to bookings, creating demand concentration risk
+
+If not addressed, these issues can lead to:
+
+- Reduced customer retention
+- Lower driver utilization efficiency
+- Missed revenue opportunities despite strong demand
 
 ---
 
@@ -353,9 +405,60 @@ The insights derived from SQL analysis were used to design key metrics and visua
 - **Enhance customer experience:**  
   Improve service quality to push ratings beyond 4.0 by reducing wait times and ensuring ride reliability.
 
+---
+
+## Conclusion 
+
+This analysis highlights that the primary challenge in ride-hailing operations is not demand generation, but inefficient conversion of bookings into successful rides.
+
+While the platform generates 39.03M in revenue, a significant portion of potential earnings is lost due to cancellations and incomplete rides.
+
+The study demonstrates that:
+
+- Operational efficiency (TAT, driver availability) is a key driver of performance
+- Customer experience (wait time, reliability) directly impacts ride success
+- Revenue growth can be achieved by fixing internal inefficiencies rather than external expansion
+
+Addressing these gaps can significantly improve both profitability and customer satisfaction.
 
 ---  
-   
+
+Next Steps / Future Analysis
+
+To further enhance decision-making and operational performance, the following analyses are recommended:
+
+1. Cancellation Driver Analysis (Deep Dive)
+- Identify exact causes of cancellations using time, location, and wait-time segmentation
+- Quantify impact of C_TAT and V_TAT on ride failure probability
+
+2. Demand-Supply Gap Analysis
+- Compare booking demand vs driver availability
+- Identify peak-hour shortages and high-failure zones
+  
+3. Location-Based Performance Analysis
+- Analyze pickup/drop hotspots with high cancellation rates
+- Enable targeted operational improvements in critical areas
+  
+4. Customer Segmentation & Retention
+- Segment users into: High-frequency, Occasional and At-risk customers
+- Evaluate how cancellations impact repeat usage
+
+5. Pricing & Incentive Optimization
+- Analyze whether:
+   -Longer rides face higher cancellations
+   -Certain vehicle types underperform due to pricing mismatch
+  
+- Recommend dynamic pricing or driver incentives
+  
+6. Driver Performance & Reliability Analysis
+-Track driver-level metrics:
+   - Cancellation frequency
+   - Ratings
+   - Ride completion rate
+- Identify and manage low-performing drivers
+
+---
+
 ## Tools Used
 
 - Excel (Data Source & Preparation)
@@ -451,11 +554,6 @@ ola-ride-performance-analysis/
 
 5. Review insights and recommendations for business understanding
 
----
-
-## Conclusion
-
-This project demonstrates how raw operational data can be transformed into meaningful business insights using SQL and Power BI. The analysis highlights key inefficiencies in ride completion and provides actionable recommendations to improve revenue, customer experience, and operational performance.
 
 ---
 
