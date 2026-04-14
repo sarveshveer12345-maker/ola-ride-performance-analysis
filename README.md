@@ -8,7 +8,7 @@ Using SQL, key business queries were performed to extract insights such as succe
 
 This project focuses on SQL-driven data analysis combined with Power BI visualization to evaluate ride performance, revenue trends, customer behavior, and operational efficiency.
 
-**Note:** The dataset used for this analysis is labeled as “OLA ride data”, but the insights and analysis are generalized to reflect broader ride-hailing operations.
+**Note:** The dataset is labeled as "OLA ride data"; however, this analysis is designed to reflect general ride-hailing operations and business dynamics.
 
 ---
 
@@ -504,8 +504,8 @@ The dashboard enables operations teams to identify high-failure segments, monito
 
 - The 62.1% ride success rate reveals a structural conversion problem, where nearly 38% of demand fails to generate revenue — making operational efficiency the primary growth constraint.
 
-- Despite generating 24.22M in revenue, this indicates that improving ride conversion efficiency is the most immediate lever for revenue growth.
-
+- Despite generating 24.22M in revenue, growth is constrained by poor ride conversion rather than lack of demand.
+  
 - Revenue contribution is heavily concentrated in Cash and UPI payments, indicating low diversification in payment behavior, which may limit scalability and reduce control over transaction efficiency.
 
 - Certain vehicle types generate higher revenue with comparable ride volumes, highlighting differences in pricing and customer preference across categories.
@@ -583,9 +583,9 @@ Action:
 - Rebalance supply in underperforming segments
 
 
-### Strengthen High-Value Customer Retention
+### Strengthen Customer Retention
 
-A small group of customers drives a large share of bookings, making them critical to revenue stability.
+Low repeat usage indicates weak customer stickiness and limited engagement.
 
 Action:
 
