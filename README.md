@@ -1,4 +1,4 @@
-# Revenue Leakage Analysis in Ride-Hailing: Cancellations, Demand & Operational Efficiency.
+# Revenue Leakage in Ride-Hailing: Cancellations & Operational Efficiency
 
 ## Project Overview
 
@@ -500,9 +500,9 @@ The dashboard enables operations teams to identify high-failure segments, monito
 ## Key Insights
 
 
-- The ride success rate stands at 62.1%, meaning nearly 38% of total bookings fail to convert into completed rides, indicating a significant gap between demand and revenue realization. This highlights that the primary issue is not demand generation, but inefficient conversion of bookings into revenue.
+- The 62.1% ride success rate reveals a structural conversion problem, where nearly 38% of demand fails to generate revenue — making operational efficiency the primary growth constraint.
 
-- Despite generating 24.22M in revenue, This indicates that improving ride conversion efficiency is the most immediate lever for revenue growth.
+- Despite generating 24.22M in revenue, this indicates that improving ride conversion efficiency is the most immediate lever for revenue growth.
 
 - Revenue contribution is heavily concentrated in Cash and UPI payments, indicating low diversification in payment behavior, which may limit scalability and reduce control over transaction efficiency.
 
