@@ -118,20 +118,20 @@ CALCULATE(
 
 ## Revenue Leakage Analysis
 
-Business Question:
+**Business Question:**
 How much potential revenue is lost due to unsuccessful bookings?
 
-Key Insight:
-Out of 71.2K total bookings, only 62.1% are successfully completed, meaning nearly 38% of demand fails to convert into revenue.
+**Key Insight:**
+- Out of 71.2K total bookings, only 62.1% are successfully completed, meaning nearly 38% of demand fails to convert into revenue.
 
-With total revenue at 24.22M, this indicates that a substantial portion of potential revenue remains unrealized due to failed ride conversions, highlighting inefficiency in monetizing existing demand.
+- With total revenue at 24.22M, this indicates that a substantial portion of potential revenue remains unrealized due to failed ride conversions, highlighting inefficiency in monetizing existing demand.
 
-Business Impact:
-This is not just an operational inefficiency — it represents a direct revenue leakage problem, where existing demand is not being fully monetized.
+**Business Impact:**
+- This is not just an operational inefficiency — it represents a direct revenue leakage problem, where existing demand is not being fully monetized.
 
-Recommendation:
+**Recommendation:**
 
-Prioritize reducing cancellations over acquiring new users. Even a 5–10% improvement in ride success rate could significantly increase revenue without additional customer acquisition cost
+- Prioritize reducing cancellations over acquiring new users. Even a 5–10% improvement in ride success rate could significantly increase revenue without additional customer acquisition cost
 
 ---
 
@@ -432,9 +432,9 @@ The insights derived from SQL analysis were used to design key metrics and visua
 
 - Ride success rate → KPI Card
 - Revenue from successful bookings → KPI & Trend Chart
-- Top customers → Table visualization
-- Vehicle performance → Bar Chart
-- Payment method usage → Pie Chart
+- Top customers → Bar Chart
+- Vehicle performance → Table visualization
+- Payment method usage → Column Chart
 
 ---
 
@@ -484,7 +484,7 @@ The dashboard enables operations teams to identify high-failure segments, monito
 
 - What percentage of total bookings are successfully completed, and how efficient is the ride fulfillment process?
 
-- How much revenue is generated from completed rides, and how does it trend over time?
+- How much revenue is generated from completed rides ?
 
 - Which payment methods contribute the most to total revenue, and is there over-dependence on specific modes?
 
