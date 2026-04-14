@@ -677,7 +677,7 @@ To further enhance decision-making and operational performance, the following an
 
 - Excel (Data Source & Preparation)
 
-- My SQL (Data Analysis & Querying)
+- MySQL (Data Analysis & Querying)
 
 - Power BI (Dashboard & Visualization)
 
