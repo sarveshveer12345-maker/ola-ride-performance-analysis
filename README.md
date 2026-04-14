@@ -529,7 +529,7 @@ Operational inefficiencies such as high cancellation rates and longer wait times
 Additionally:
 
 - Heavy reliance on Cash and UPI indicates limited payment diversification
-- A small group of customers contributes disproportionately to bookings, creating demand concentration risk
+- Customer demand is widely distributed with low repeat frequency, indicating weak customer retention and limited user stickiness
 
 If not addressed, these issues can lead to:
 
