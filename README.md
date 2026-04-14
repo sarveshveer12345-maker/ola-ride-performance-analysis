@@ -168,8 +168,9 @@ This reinforces that reducing customer wait time is a critical operational lever
 - Monitor wait time thresholds (e.g., beyond 5–10 minutes) as a critical risk indicator for ride failure
 - Investigate data collection logic for C_TAT to ensure accurate measurement and enable deeper causal analysis in future
 
-**SQL Logic Used**
+### SQL Logic Used
 
+```sql
 SELECT 
     CASE 
         WHEN C_TAT/60 < 5 THEN '0-5 mins'
@@ -177,7 +178,11 @@ SELECT
         ELSE '10+ mins'
     END AS wait_time_bucket,
     COUNT(*) AS total_rides,
-    SUM(CASE WHEN Booking_Status != 'Success' THEN 1 ELSE 0 END) AS failed_rides
+    SUM(CASE WHEN Booking_Status != 'Success' THEN 1 ELSE 0 END) AS failed_rides,
+    ROUND(
+        SUM(CASE WHEN Booking_Status != 'Success' THEN 1 ELSE 0 END) * 100.0 / COUNT(*),
+        2
+    ) AS failure_rate_percentage
 FROM ola_ride_operations
 GROUP BY wait_time_bucket;
 
