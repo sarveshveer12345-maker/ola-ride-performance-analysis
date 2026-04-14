@@ -185,6 +185,7 @@ SELECT
     ) AS failure_rate_percentage
 FROM ola_ride_operations
 GROUP BY wait_time_bucket;
+```
 
 ---
 
