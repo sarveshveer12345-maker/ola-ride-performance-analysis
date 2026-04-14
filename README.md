@@ -8,6 +8,8 @@ Using SQL, key business queries were performed to extract insights such as succe
 
 This project focuses on SQL-driven data analysis combined with Power BI visualization to evaluate ride performance, revenue trends, customer behavior, and operational efficiency.
 
+**Note:** The dataset used for this analysis is labeled as “OLA ride data”, but the insights and analysis are generalized to reflect broader ride-hailing operations.
+
 ---
 
 ## Executive Summary
