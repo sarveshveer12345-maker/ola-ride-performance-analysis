@@ -133,6 +133,56 @@ Prioritize reducing cancellations over acquiring new users. Even a 5–10% impro
 
 ---
 
+## Wait Time & Ride Failure Relationship (C_TAT Analysis)
+
+**Business Question**
+
+How does customer wait time (C_TAT) impact ride completion and failure rates?
+
+
+**Key Insight**
+
+The analysis shows a strong association between customer wait time and ride outcomes, with a clear split observed across booking statuses:
+
+- Rides with low wait time (0–5 minutes) are almost entirely successful, with a 0% failure rate across 44,271 bookings
+- Rides with higher wait times (10+ minutes) show a 100% failure rate, accounting for 26,930 failed bookings
+
+This indicates that failed rides are consistently associated with significantly higher wait times, while successful rides are completed within shorter wait durations.
+
+However, the extreme distribution suggests that C_TAT may not be acting as an independent driver, but could be influenced by how wait time is recorded after a ride fails. This points to a potential data limitation where wait time and booking status are tightly coupled.
+
+
+**Business Impact**
+
+Despite the dataset limitation, the pattern clearly highlights that:
+
+- Higher wait times are strongly linked to ride failures, directly contributing to revenue leakage
+- A large portion of unsuccessful bookings is associated with delayed ride fulfillment, indicating inefficiencies in driver allocation and response time
+
+This reinforces that reducing customer wait time is a critical operational lever for improving ride conversion and minimizing lost revenue.
+
+**Recommendation**
+
+- Optimize driver allocation systems to reduce customer wait time, especially during peak demand periods
+- Improve real-time matching efficiency between riders and drivers to prevent delays in ride confirmation
+- Monitor wait time thresholds (e.g., beyond 5–10 minutes) as a critical risk indicator for ride failure
+- Investigate data collection logic for C_TAT to ensure accurate measurement and enable deeper causal analysis in future
+
+**SQL Logic Used**
+
+SELECT 
+    CASE 
+        WHEN C_TAT/60 < 5 THEN '0-5 mins'
+        WHEN C_TAT/60 < 10 THEN '5-10 mins'
+        ELSE '10+ mins'
+    END AS wait_time_bucket,
+    COUNT(*) AS total_rides,
+    SUM(CASE WHEN Booking_Status != 'Success' THEN 1 ELSE 0 END) AS failed_rides
+FROM ola_ride_operations
+GROUP BY wait_time_bucket;
+
+---
+
 # SQL Analysis
 
 SQL was used to perform detailed data analysis and answer specific business questions, including ride success rates, cancellation behavior, customer patterns, and revenue calculations.
