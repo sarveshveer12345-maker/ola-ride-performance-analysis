@@ -722,6 +722,7 @@ To further enhance decision-making and operational performance, the following an
 
 ## Project Structure
 
+```
 ola-ride-performance-analysis/
 
 ├── data/
@@ -736,6 +737,7 @@ ola-ride-performance-analysis/
 │   ├── ola_dashboard_overview.png             
 │   └── ola_dataset_preview.png                 
 └── README.md                                   
+```
 
 ---
 
